@@ -24,3 +24,12 @@ texts.forEach((text, index) => {
 
 // Set an interval to toggle between text elements infinitely
 setInterval(toggleText, 3000); // Adjust the timing as needed
+
+let hamburger = document.getElementById("hamburger");
+// let navlinks = document.getElementById("navlinks");
+// let navLayer = document.getElementById("navLayer");
+hamburger.addEventListener("click", function () {
+  {
+    document.body.classList.toggle("clicked");
+  }
+});
