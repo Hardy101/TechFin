@@ -4,6 +4,8 @@ html {
 * {
   font-family: "Poppins", sans-serif;
 }
+
+
 #hamburger.toggled #line2 {
   --tw-translate-y: -0.25rem;
   --tw-rotate: -45deg;
