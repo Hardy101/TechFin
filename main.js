@@ -42,6 +42,11 @@ function hideText(index) {
 function showText(index) {
   texts[index].classList.remove("hidden");
 }
+function nextText() {
+  hideText(currentIndex);
+  currentIndex = (currentIndex + 1) % texts.length;
+  showText(currentIndex);
+}
 
 function toggleText() {
   hideText(currentIndex);
@@ -55,3 +60,5 @@ texts.forEach((text, index) => {
     text.classList.add("hidden");
   }
 });
+
+setInterval(nextText, 2000);
